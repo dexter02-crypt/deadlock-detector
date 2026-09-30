@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Deadlock Detector</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><header><div><div class="eyebrow">Operating systems / graph theory</div><h1>Deadlock<br>Detector</h1></div><p class="muted">Explore cycles in a single-instance resource-allocation graph.</p></header>
+<div class="grid">
+<section class="card span8"><svg id="graph" viewBox="0 0 650 350"></svg><p class="muted">Amber: request P→R · Blue: assignment R→P</p></section>
+<section class="card span4"><h2>Scenario</h2><div class="controls"><button id="dead" class="primary">Deadlock</button><button id="safe">Safe</button><button id="remove">Remove last edge</button><button id="restore">Restore</button></div><div id="status" class="metric" style="margin-top:18px"></div><p id="cycle"></p></section>
+<section class="card span12"><h2>Derived wait-for relationships</h2><table><tbody id="wait"></tbody></table></section>
+</div><footer>Cycle detection is sufficient here only because every resource node in the model represents a single resource instance.</footer>
+<script type="module" src="src/app.js"></script></main></body></html>

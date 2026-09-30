@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: cycle is detected and closes on itself
+ok 1 - cycle is detected and closes on itself
+  ---
+  duration_ms: 1.081672
+  type: 'test'
+  ...
+# Subtest: safe graph has no cycle
+ok 2 - safe graph has no cycle
+  ---
+  duration_ms: 0.196366
+  type: 'test'
+  ...
+# Subtest: analysis flag agrees with cycle
+ok 3 - analysis flag agrees with cycle
+  ---
+  duration_ms: 0.162945
+  type: 'test'
+  ...
+# Subtest: wait-for graph maps requester to current owner
+ok 4 - wait-for graph maps requester to current owner
+  ---
+  duration_ms: 0.812976
+  type: 'test'
+  ...
+# Subtest: validator returns independent structures
+ok 5 - validator returns independent structures
+  ---
+  duration_ms: 0.306272
+  type: 'test'
+  ...
+# Subtest: invalid edge direction rejected
+ok 6 - invalid edge direction rejected
+  ---
+  duration_ms: 0.23145
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 53.574934
